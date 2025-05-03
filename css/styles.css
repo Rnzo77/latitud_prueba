@@ -1,0 +1,204 @@
+* {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    font-family: "JetBrains Mono", monospace;
+}
+
+body {
+    background-color: #333333;
+}
+
+.videoBackground {
+    position: relative;
+    height: 100vh;
+}
+
+.videoBackground video {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    z-index: -2;
+    position:absolute;
+    height: 100vh;
+}
+
+.textFloat {
+    color: #ffffff;
+}
+
+.txtMain {
+    position:absolute;
+    left: 4rem;
+    top: 3rem;
+    z-index: -1;
+}
+
+.txtMain p{
+    margin-bottom: 0;
+    font-weight: 500;
+    font-size: 0.8rem;
+}
+
+.txtMain span{
+    display: inline-block;
+}
+
+.txtFade1{
+    opacity: 0;
+    transform: scale(2);
+    filter: blur(10px);
+    animation: fadeInScale 1s ease-in-out forwards;
+    animation-delay: 0s;
+}
+
+.txtFade2{
+    opacity: 0;
+    transform: scale(2);
+    filter: blur(10px);
+    animation: fadeInScale 1s ease-in-out forwards;
+    animation-delay: 0.3s;
+}
+
+.txtFade3{
+    opacity: 0;
+    transform: scale(2);
+    filter: blur(10px);
+    animation: fadeInScale 1s ease-in-out forwards;
+    animation-delay: 0.6s;
+}
+
+.txtFade4{
+    opacity: 0;
+    transform: scale(2);
+    filter: blur(10px);
+    animation: fadeInScale 1s ease-in-out forwards;
+    animation-delay: 1s;
+}
+
+.txtFade5{
+    opacity: 0;
+    transform: scale(2);
+    filter: blur(10px);
+    animation: fadeInScale 1s ease-in-out forwards;
+    animation-delay: 1.3s;
+}
+
+.txtFade6{
+    opacity: 0;
+    transform: scale(2);
+    filter: blur(10px);
+    animation: fadeInScale 1s ease-in-out forwards;
+    animation-delay: 1.6s;
+}
+
+.txtFade7{
+    opacity: 0;
+    transform: scale(2);
+    filter: blur(10px);
+    animation: fadeInScale 1s ease-in-out forwards;
+    animation-delay: 2s;
+}
+
+.txtFade8{
+    opacity: 0;
+    transform: scale(2);
+    filter: blur(10px);
+    animation: fadeInScale 1s ease-in-out forwards;
+    animation-delay: 2.3s;
+}
+
+.txtFade9{
+    opacity: 0;
+    transform: scale(2);
+    filter: blur(10px);
+    animation: fadeInScale 1s ease-in-out forwards;
+    animation-delay: 2.6s;
+}
+
+@keyframes fadeInScale {
+    from {
+        filter: blur(10px);
+        opacity: 0;
+        transform: scale(2);
+    }
+    to {
+        filter: blur(0px);
+        opacity: 1;
+        transform: scale(1);
+    }
+
+}
+
+.txtFloatLima {
+    position:absolute;
+    left: 12vw;
+    top: 64vh;
+    z-index: -1;
+}
+
+.flotaIzquierda{
+    display: inline-block;
+    opacity: 0.5;
+    transform: translateX(100px);
+    animation: fadeInMoveIzq 4s ease-in-out forwards;
+    animation-delay: 4;
+}
+
+@keyframes fadeInMoveIzq {
+    from {
+        transform: translateX(100px);
+        opacity: 0.5;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+}
+
+.txtFloatNY {
+    position:absolute;
+    left: 80vw;
+    top: 32vh;
+    z-index: -1;
+}
+
+.flotaDerecha{
+    display: inline-block;
+    opacity: 0.5;
+    transform: translateX(-100px);
+    animation: fadeInMoveDer 4s ease-in-out forwards;
+    animation-delay: 4;
+}
+
+@keyframes fadeInMoveDer {
+    from {
+        transform: translateX(-100px);
+        opacity: 0.5;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+}
+
+.textCenter {
+    flex-direction: column;
+    color: #ffffff;
+    margin-top: 44vh;
+}
+
+.imgCenter, .textSpan {
+    display: flex;
+    justify-content: center;
+}
+
+.imgCenter img{
+    width: 30vh;
+}
+
+.textSpan {
+    margin-top: 1rem;
+}
