@@ -29,15 +29,15 @@ body {
 
 .txtMain {
     position:absolute;
-    left: 4rem;
-    top: 3rem;
+    left: 4vw;
+    top: 5vh;
     z-index: -1;
 }
 
 .txtMain p{
     margin-bottom: 0;
     font-weight: 500;
-    font-size: 0.8rem;
+    font-size: 1.4vh;
 }
 
 .txtMain span{
@@ -133,49 +133,50 @@ body {
 .txtFloatLima {
     position:absolute;
     left: 12vw;
-    top: 64vh;
+    top: 72vh;
     z-index: -1;
 }
 
 .flotaIzquierda{
     display: inline-block;
-    opacity: 0.5;
-    transform: translateX(100px);
+    font-size: 1.6vh;
+    opacity: 0;
+    transform: translateX(100%);
     animation: fadeInMoveIzq 4s ease-in-out forwards;
     animation-delay: 4;
 }
 
 @keyframes fadeInMoveIzq {
     from {
-        transform: translateX(100px);
-        opacity: 0.5;
+        transform: translateX(100%);
+        opacity: 0;
     }
     to {
         transform: translateX(0);
         opacity: 1;
     }
-
 }
 
 .txtFloatNY {
     position:absolute;
     left: 80vw;
-    top: 32vh;
+    top: 36vh;
     z-index: -1;
 }
 
 .flotaDerecha{
     display: inline-block;
-    opacity: 0.5;
-    transform: translateX(-100px);
+    font-size: 1.6vh;
+    opacity: 0;
+    transform: translateX(-100%);
     animation: fadeInMoveDer 4s ease-in-out forwards;
     animation-delay: 4;
 }
 
 @keyframes fadeInMoveDer {
     from {
-        transform: translateX(-100px);
-        opacity: 0.5;
+        transform: translateX(-100%);
+        opacity: 0;
     }
     to {
         transform: translateX(0);
@@ -187,7 +188,7 @@ body {
 .textCenter {
     flex-direction: column;
     color: #ffffff;
-    margin-top: 44vh;
+    margin-top: 48vh;
 }
 
 .imgCenter, .textSpan {
@@ -200,5 +201,93 @@ body {
 }
 
 .textSpan {
-    margin-top: 1rem;
+    margin-top: 2.2vh;
+}
+
+.textSpan span{
+    font-size: 2.2vh;
+}
+
+@media (min-aspect-ratio: 4 / 1){
+    .txtFloatLima {
+        left: 20vw;
+    }
+
+    .txtFloatNY {
+        left: 70vw;
+    }
+}
+
+@media (min-aspect-ratio: 5 / 2){
+    
+    .txtMain p{
+        font-size: 0.6vw;
+    }
+
+    .flotaIzquierda{
+        font-size: 0.8vw;
+    }
+
+    .flotaDerecha{
+        font-size: 0.8vw;
+    }
+
+    .textCenter {
+        margin-top: 42vh;
+    }
+
+    .imgCenter img{
+        width: 16vw;
+    }
+
+    .textSpan span{
+        font-size: 1vw;
+    }
+}
+
+@media (max-aspect-ratio: 1 / 1){
+    .txtFloatNY {
+        left: 75vw;
+    }
+    .txtFloatLima {
+        left: 17vw;
+    }
+}
+
+@media (max-aspect-ratio: 3 / 4){
+    .txtFloatLima {
+        top: 84vh;
+    }
+
+    .txtFloatNY {
+        top: 44vh;
+    }
+
+    .textCenter {
+        margin-top: 56vh;
+    }
+}
+
+@media (max-aspect-ratio: 5 / 8){
+    .imgCenter img{
+        width: 60vw;
+    }
+}
+
+@media (max-aspect-ratio: 1 / 2){
+    .txtFloatLima {
+        top: 84vh;
+    }
+
+    .txtFloatNY {
+        top: 44vh;
+    }
+
+    .imgCenter img{
+        width: 75vw;
+    }
+
+    .textCenter {
+        margin-top: 56vh;
+    }
 }
