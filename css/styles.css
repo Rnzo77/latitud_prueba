@@ -37,7 +37,7 @@ body {
 .txtMain p{
     margin-bottom: 0;
     font-weight: 500;
-    font-size: 1.4vh;
+    font-size: 1.2vh;
 }
 
 .txtMain span{
@@ -49,7 +49,7 @@ body {
     transform: scale(2);
     filter: blur(10px);
     animation: fadeInScale 1s ease-in-out forwards;
-    animation-delay: 0s;
+    animation-delay: 3.3s;
 }
 
 .txtFade2{
@@ -57,7 +57,7 @@ body {
     transform: scale(2);
     filter: blur(10px);
     animation: fadeInScale 1s ease-in-out forwards;
-    animation-delay: 0.3s;
+    animation-delay: 3.6s;
 }
 
 .txtFade3{
@@ -65,7 +65,7 @@ body {
     transform: scale(2);
     filter: blur(10px);
     animation: fadeInScale 1s ease-in-out forwards;
-    animation-delay: 0.6s;
+    animation-delay: 4s;
 }
 
 .txtFade4{
@@ -73,7 +73,7 @@ body {
     transform: scale(2);
     filter: blur(10px);
     animation: fadeInScale 1s ease-in-out forwards;
-    animation-delay: 1s;
+    animation-delay: 4.3s;
 }
 
 .txtFade5{
@@ -81,7 +81,7 @@ body {
     transform: scale(2);
     filter: blur(10px);
     animation: fadeInScale 1s ease-in-out forwards;
-    animation-delay: 1.3s;
+    animation-delay: 4.6s;
 }
 
 .txtFade6{
@@ -89,7 +89,7 @@ body {
     transform: scale(2);
     filter: blur(10px);
     animation: fadeInScale 1s ease-in-out forwards;
-    animation-delay: 1.6s;
+    animation-delay: 5s;
 }
 
 .txtFade7{
@@ -97,7 +97,7 @@ body {
     transform: scale(2);
     filter: blur(10px);
     animation: fadeInScale 1s ease-in-out forwards;
-    animation-delay: 2s;
+    animation-delay: 5.3s;
 }
 
 .txtFade8{
@@ -105,7 +105,7 @@ body {
     transform: scale(2);
     filter: blur(10px);
     animation: fadeInScale 1s ease-in-out forwards;
-    animation-delay: 2.3s;
+    animation-delay: 5.6s;
 }
 
 .txtFade9{
@@ -113,7 +113,7 @@ body {
     transform: scale(2);
     filter: blur(10px);
     animation: fadeInScale 1s ease-in-out forwards;
-    animation-delay: 2.6s;
+    animation-delay: 6s;
 }
 
 @keyframes fadeInScale {
@@ -139,11 +139,11 @@ body {
 
 .flotaIzquierda{
     display: inline-block;
-    font-size: 1.6vh;
+    font-size: 1.9vh;
     opacity: 0;
     transform: translateX(100%);
-    animation: fadeInMoveIzq 4s ease-in-out forwards;
-    animation-delay: 4;
+    animation: fadeInMoveIzq 3s ease-in-out forwards;
+    animation-delay: 0;
 }
 
 @keyframes fadeInMoveIzq {
@@ -166,11 +166,11 @@ body {
 
 .flotaDerecha{
     display: inline-block;
-    font-size: 1.6vh;
+    font-size: 1.9vh;
     opacity: 0;
     transform: translateX(-100%);
-    animation: fadeInMoveDer 4s ease-in-out forwards;
-    animation-delay: 4;
+    animation: fadeInMoveDer 3s ease-in-out forwards;
+    animation-delay: 0;
 }
 
 @keyframes fadeInMoveDer {
@@ -201,10 +201,10 @@ body {
 }
 
 .textSpan {
-    margin-top: 2.2vh;
+    margin-top: 2.4vh;
 }
 
-.textSpan span{
+.textSpan p{
     font-size: 2.2vh;
 }
 
@@ -224,11 +224,11 @@ body {
     }
 
     .flotaIzquierda{
-        font-size: 0.8vw;
+        font-size: 0.9vw;
     }
 
     .flotaDerecha{
-        font-size: 0.8vw;
+        font-size: 0.9vw;
     }
 
     .textCenter {
@@ -239,7 +239,7 @@ body {
         width: 16vw;
     }
 
-    .textSpan span{
+    .textSpan p{
         font-size: 1vw;
     }
 }
@@ -251,19 +251,19 @@ body {
     }
 
     .txtMain p{
-        font-size: 1.7vh;
+        font-size: 1.2vh;
     }
     
     .flotaIzquierda{
-        font-size: 1.9vh;
+        font-size: 2vh;
     }
 
     .flotaDerecha{
-        font-size: 1.9vh;
+        font-size: 2vh;
     }
 
     .txtFloatNY {
-        top: 44vh;
+        top: 40vh;
         left: 75vw;
     }
 
@@ -273,7 +273,7 @@ body {
     }
 
     .textCenter {
-        margin-top: 54vh;
+        margin-top: 50vh;
     }
 
     .textSpan span{
@@ -285,24 +285,22 @@ body {
     .imgCenter img{
         width: 60vw;
     }
+
+    .txtFloatNY {
+        left: 70vw;
+    }
 }
 
 @media (max-aspect-ratio: 1 / 2){
     .txtFloatLima {
-        top: 78vh;
         left: 10vw;
     }
 
     .txtFloatNY {
-        top: 46vh;
-        left: 70vw;
+        left: 69vw;
     }
 
     .imgCenter img{
         width: 75vw;
-    }
-
-    .textCenter {
-        margin-top: 58vh;
     }
 }
