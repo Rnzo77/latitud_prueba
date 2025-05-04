@@ -219,7 +219,6 @@ body {
 }
 
 @media (min-aspect-ratio: 5 / 2){
-    
     .txtMain p{
         font-size: 0.6vw;
     }
@@ -246,25 +245,39 @@ body {
 }
 
 @media (max-aspect-ratio: 1 / 1){
-    .txtFloatNY {
-        left: 75vw;
+    .txtMain {
+        left: 3vw;
+        top: 4vh;
     }
-    .txtFloatLima {
-        left: 17vw;
-    }
-}
 
-@media (max-aspect-ratio: 3 / 4){
-    .txtFloatLima {
-        top: 84vh;
+    .txtMain p{
+        font-size: 1.7vh;
+    }
+    
+    .flotaIzquierda{
+        font-size: 1.9vh;
+    }
+
+    .flotaDerecha{
+        font-size: 1.9vh;
     }
 
     .txtFloatNY {
         top: 44vh;
+        left: 75vw;
+    }
+
+    .txtFloatLima {
+        top: 74vh;
+        left: 17vw;
     }
 
     .textCenter {
-        margin-top: 56vh;
+        margin-top: 54vh;
+    }
+
+    .textSpan span{
+        font-size: 2.4vh;
     }
 }
 
@@ -276,11 +289,13 @@ body {
 
 @media (max-aspect-ratio: 1 / 2){
     .txtFloatLima {
-        top: 84vh;
+        top: 78vh;
+        left: 10vw;
     }
 
     .txtFloatNY {
-        top: 44vh;
+        top: 46vh;
+        left: 70vw;
     }
 
     .imgCenter img{
@@ -288,6 +303,6 @@ body {
     }
 
     .textCenter {
-        margin-top: 56vh;
+        margin-top: 58vh;
     }
 }
