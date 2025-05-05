@@ -324,7 +324,7 @@ body {
     }
 
     .logosFinales{
-        bottom: 16vh;
+        bottom: 15vh;
     }
 
     .logosFinales img{
@@ -348,7 +348,14 @@ body {
     }
 
     .logosFinales{
-        right: 10vw;
+        bottom: 13vh;
+        right: 7vw;
+    }
+
+    .logosFinales img{
+        margin: 0 1.3vw;
+        max-width: 10vh;
+        max-height: 6vh;
     }
 }
 
@@ -363,5 +370,9 @@ body {
 
     .imgCenter img{
         width: 75vw;
+    }
+
+    .logosFinales{
+        bottom: 10vh;
     }
 }
