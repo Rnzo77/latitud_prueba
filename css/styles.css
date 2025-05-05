@@ -311,12 +311,12 @@ body {
     }
 
     .txtFloatLima {
-        top: 68vh;
+        top: 66vh;
         left: 14vw;
     }
 
     .textCenter {
-        margin-top: 46vh;
+        margin-top: 44vh;
     }
 
     .textSpan span{
@@ -324,7 +324,7 @@ body {
     }
 
     .logosFinales{
-        bottom: 10vh;
+        bottom: 16vh;
     }
 
     .logosFinales img{
@@ -349,7 +349,6 @@ body {
 
     .logosFinales{
         right: 10vw;
-        bottom: 16vh;
     }
 }
 
