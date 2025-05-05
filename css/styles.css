@@ -306,17 +306,17 @@ body {
     }
 
     .txtFloatNY {
-        top: 40vh;
+        top: 32vh;
         right: 14vw;
     }
 
     .txtFloatLima {
-        top: 74vh;
+        top: 68vh;
         left: 14vw;
     }
 
     .textCenter {
-        margin-top: 50vh;
+        margin-top: 46vh;
     }
 
     .textSpan span{
@@ -324,7 +324,7 @@ body {
     }
 
     .logosFinales{
-        bottom: 6vh;
+        bottom: 10vh;
     }
 
     .logosFinales img{
@@ -335,13 +335,21 @@ body {
 }
 
 @media (max-aspect-ratio: 5 / 8){
+    .txtFloatNY {
+        top: 36vh;
+    }
+
+    .txtFloatLima {
+        top: 66vh;
+    }
+
     .imgCenter img{
         width: 60vw;
     }
 
     .logosFinales{
         right: 10vw;
-        bottom: 8vh;
+        bottom: 16vh;
     }
 }
 
