@@ -49,7 +49,7 @@ body {
     transform: scale(2);
     filter: blur(10px);
     animation: fadeInScale 1s ease-in-out forwards;
-    animation-delay: 5.75s;
+    animation-delay: 5s;
 }
 
 .txtFade2{
@@ -57,7 +57,7 @@ body {
     transform: scale(2);
     filter: blur(10px);
     animation: fadeInScale 1s ease-in-out forwards;
-    animation-delay: 6s;
+    animation-delay: 5.25s;
 }
 
 .txtFade3{
@@ -65,7 +65,7 @@ body {
     transform: scale(2);
     filter: blur(10px);
     animation: fadeInScale 1s ease-in-out forwards;
-    animation-delay: 6.25s;
+    animation-delay: 5.5s;
 }
 
 .txtFade4{
@@ -73,7 +73,7 @@ body {
     transform: scale(2);
     filter: blur(10px);
     animation: fadeInScale 1s ease-in-out forwards;
-    animation-delay: 6.5s;
+    animation-delay: 5.75s;
 }
 
 .txtFade5{
@@ -81,7 +81,7 @@ body {
     transform: scale(2);
     filter: blur(10px);
     animation: fadeInScale 1s ease-in-out forwards;
-    animation-delay: 6.75s;
+    animation-delay: 6s;
 }
 
 .txtFade6{
@@ -89,7 +89,7 @@ body {
     transform: scale(2);
     filter: blur(10px);
     animation: fadeInScale 1s ease-in-out forwards;
-    animation-delay: 7s;
+    animation-delay: 6.25s;
 }
 
 .txtFade7{
@@ -97,7 +97,7 @@ body {
     transform: scale(2);
     filter: blur(10px);
     animation: fadeInScale 1s ease-in-out forwards;
-    animation-delay: 7.25s;
+    animation-delay: 6.5s;
 }
 
 .txtFade8{
@@ -105,7 +105,7 @@ body {
     transform: scale(2);
     filter: blur(10px);
     animation: fadeInScale 1s ease-in-out forwards;
-    animation-delay: 7.5s;
+    animation-delay: 6.75s;
 }
 
 .txtFade9{
@@ -113,7 +113,7 @@ body {
     transform: scale(2);
     filter: blur(10px);
     animation: fadeInScale 1s ease-in-out forwards;
-    animation-delay: 7.25s;
+    animation-delay: 7s;
 }
 
 @keyframes fadeInScale {
@@ -167,16 +167,16 @@ body {
 .flotaDerecha{
     display: inline-block;
     font-size: 1.9vh;
-    opacity: 0;
+    opacity: 0.3;
     transform: translateX(-100%);
     animation: fadeInMoveDer 3s ease-in-out forwards;
-    animation-delay: 2.5s;
+    animation-delay: 2.25s;
 }
 
 @keyframes fadeInMoveDer {
     from {
         transform: translateX(-100%);
-        opacity: 0;
+        opacity: 0.3;
     }
     to {
         transform: translateX(0);
@@ -205,7 +205,7 @@ body {
 }
 
 .textSpan p{
-    font-size: 2.2vh;
+    font-size: 2vh;
 }
 
 .logosFinales{
@@ -218,7 +218,7 @@ body {
 .logosFinales img{
     display: inline-block;
     margin: 0 1vw;
-    max-width: 6vw;
+    max-width: 14vh;
     max-height: 8.5vh;
 }
 
@@ -233,8 +233,8 @@ body {
     }
 
     .logosFinales img{
-        margin: 0 0.6vw !important;
-        max-width: 5vw !important;
+        margin: 0 0.4vw !important;
+        max-width: 23vh !important;
         max-height: 12vh !important;
     }
 }
@@ -265,7 +265,7 @@ body {
     }
 
     .textSpan p{
-        font-size: 1vw;
+        font-size: 1.2vw;
     }
 
     .logosFinales{
@@ -274,15 +274,14 @@ body {
 
     .logosFinales img{
         margin: 0 0.75vw;
-        max-width: 5.5vw;
+        max-width: 17vh;
         max-height: 9.5vh;
     }
 }
 
 @media (max-aspect-ratio: 4 / 3){
     .logosFinales img{
-        margin: 0 1.2vw;
-        max-width: 7.5vw;
+        max-width: 12vh;
         max-height: 7vh;
     }
 }
@@ -320,7 +319,7 @@ body {
     }
 
     .textSpan span{
-        font-size: 2.4vh;
+        font-size: 2.2vh;
     }
 
     .logosFinales{
