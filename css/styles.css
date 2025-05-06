@@ -279,13 +279,6 @@ body {
     }
 }
 
-@media (max-aspect-ratio: 4 / 3){
-    .logosFinales img{
-        max-width: 12vh;
-        max-height: 7vh;
-    }
-}
-
 @media (max-aspect-ratio: 1 / 1){
     .txtMain {
         left: 6vw;
@@ -332,16 +325,13 @@ body {
     }
 
     .logosFinales{
-        width: 100vw;
-        right: 0vh;
-        bottom: 13vh;
+        bottom: 15vh;
     }
 
     .logosFinales img{
-        display: block;
-        margin: 2vh auto;
-        max-width: 16vh;
-        max-height: 8.5vh;
+        margin: 0 1.5vw;
+        max-width: 14vh;
+        max-height: 8vh;
     }
 }
 
@@ -359,14 +349,8 @@ body {
     }
 
     .logosFinales{
-        bottom: 15vh;
+        bottom: 16vh;
     }
-
-    .logosFinales img{
-        max-width: 14vh;
-        max-height: 8vh;
-    }
-}
 
 @media (max-aspect-ratio: 1 / 2){
     .txtFloatLima {
@@ -388,5 +372,12 @@ body {
     .logosFinales img{
         max-width: 12vh;
         max-height: 7vh;
+    }
+}
+
+@media (max-aspect-ratio: 3 / 7){
+    .logosFinales img{
+        max-width: 11vh;
+        max-height: 6vh;
     }
 }
