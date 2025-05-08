@@ -3,6 +3,7 @@
     margin: 0;
     overflow: hidden;
     font-family: "JetBrains Mono", monospace;
+    color: #ffffff;
 }
 
 body {
@@ -21,10 +22,6 @@ body {
     z-index: -2;
     position:absolute;
     height: 100vh;
-}
-
-.textFloat {
-    color: #ffffff;
 }
 
 .txtMain {
@@ -127,7 +124,43 @@ body {
         opacity: 1;
         transform: scale(1);
     }
+}
 
+.botonSuscribirse {
+    position:absolute;
+    right: 3vw;
+    top: 4vh;
+    z-index: 1;
+    font-size: 1.4vh;
+}
+
+.botonSuscribirse form {
+    display: flex;
+    gap: 20px;
+}
+
+.botonSuscribirse input {
+    width: 20vw;
+    background-color: rgba(255, 255, 255, 0.35);
+    padding: 8px 12px;
+    border: 1.5px solid #000;
+    border-radius: 5px;
+    color: #222;
+}
+
+.botonSuscribirse button {
+    padding: 8px 12px;
+    background-color: #fff;
+    color: #000;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+
+.botonSuscribirse button:hover {
+    background-color: rgba(255, 255, 255, 0.6);
 }
 
 .txtFloatLima {
@@ -182,7 +215,6 @@ body {
         transform: translateX(0);
         opacity: 1;
     }
-
 }
 
 .textCenter {
@@ -213,6 +245,18 @@ body {
     right: 3vw;
     bottom: 5vh;
     z-index: -1;
+}
+
+.textoLogos{
+    display: inline-block;
+    margin-right: 1.2vw;
+    vertical-align: middle;
+}
+
+.textoLogos p{
+    margin-bottom: 0.25vh;
+    font-weight: 500;
+    font-size: 1.25vh;
 }
 
 .logosFinales img{
@@ -279,16 +323,17 @@ body {
     }
 }
 
-@media (max-aspect-ratio: 1 / 1){
-    .txtMain {
-        left: 6vw;
-        top: 3vh;
+@media (max-aspect-ratio: 6 / 5) {
+    .botonSuscribirse input {
+        width: 30vw;
     }
+}
 
+@media (max-aspect-ratio: 1 / 1){
     .txtMain p{
         font-size: 1.2vh;
     }
-    
+
     .flotaIzquierda{
         font-size: 2vh;
     }
@@ -308,12 +353,32 @@ body {
     .textSpan span{
         font-size: 2.2vh;
     }
-
 }
 
 @media (max-aspect-ratio: 7 / 8){
+    .botonSuscribirse form {
+        gap: 10px;
+    }
+
+    .botonSuscribirse input {
+        width: 45vw;
+    }
+
+    .txtMain {
+        left: 5vw;
+        top: 10.5vh;
+    }
+
+    .botonSuscribirse input {
+        padding: 6px 8px;
+    }
+    
+    .botonSuscribirse button {
+        padding: 6px 8px;
+    }
+
     .txtFloatNY {
-        top: 32vh;
+        top: 42vh;
     }
 
     .txtFloatLima {
@@ -321,27 +386,35 @@ body {
     }
 
     .textCenter {
-        margin-top: 42vh;
+        margin-top: 50vh;
     }
 
     .logosFinales{
         bottom: 15vh;
     }
 
+    .textoLogos p{
+        font-size: 1vh;
+    }
+
     .logosFinales img{
         margin: 0 1.5vw;
-        max-width: 14vh;
-        max-height: 8vh;
+        max-width: 12vh;
+        max-height: 7vh;
     }
 }
 
 @media (max-aspect-ratio: 5 / 8){
     .txtFloatNY {
-        top: 36vh;
+        top: 38vh;
     }
 
     .txtFloatLima {
-        top: 66vh;
+        top: 62vh;
+    }
+
+    .textCenter {
+        margin-top: 46vh;
     }
 
     .imgCenter img{
@@ -351,6 +424,20 @@ body {
     .logosFinales{
         bottom: 16vh;
     }
+
+    .textoLogos{
+        display: block;
+        margin: 0 0 0.5vh;
+    }
+
+    .textoLogos p{
+        font-size: 0.9vh;
+    }
+
+    .logosFinales img{
+        margin: 0 0.5vh;
+    }
+}
 
 @media (max-aspect-ratio: 1 / 2){
     .txtFloatLima {
@@ -367,17 +454,5 @@ body {
 
     .logosFinales{
         bottom: 17vh;
-    }
-
-    .logosFinales img{
-        max-width: 12vh;
-        max-height: 7vh;
-    }
-}
-
-@media (max-aspect-ratio: 3 / 7){
-    .logosFinales img{
-        max-width: 11vh;
-        max-height: 6vh;
     }
 }
