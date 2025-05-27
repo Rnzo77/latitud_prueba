@@ -10,6 +10,15 @@ body {
     background-color: #333333;
 }
 
+#mc_embed_signup{
+    background-color: transparent;
+}
+
+#mc_embed_signup_scroll div{
+    display: inline-block;
+}
+
+
 .videoBackground {
     position: relative;
     height: 100vh;
@@ -17,11 +26,10 @@ body {
 
 .videoBackground video {
     width: 100%;
-    height: auto;
+    height: 100vh;
     object-fit: cover;
     z-index: -2;
     position:absolute;
-    height: 100vh;
 }
 
 .txtMain {
@@ -42,7 +50,8 @@ body {
 }
 
 .txtFade1{
-    opacity: 0;
+    will-change: transform, opacity, filter;
+    opacity: 0.1;
     transform: scale(2);
     filter: blur(10px);
     animation: fadeInScale 1s ease-in-out forwards;
@@ -50,7 +59,8 @@ body {
 }
 
 .txtFade2{
-    opacity: 0;
+    will-change: transform, opacity, filter;
+    opacity: 0.1;
     transform: scale(2);
     filter: blur(10px);
     animation: fadeInScale 1s ease-in-out forwards;
@@ -58,7 +68,8 @@ body {
 }
 
 .txtFade3{
-    opacity: 0;
+    will-change: transform, opacity, filter;
+    opacity: 0.1;
     transform: scale(2);
     filter: blur(10px);
     animation: fadeInScale 1s ease-in-out forwards;
@@ -66,7 +77,8 @@ body {
 }
 
 .txtFade4{
-    opacity: 0;
+    will-change: transform, opacity, filter;
+    opacity: 0.1;
     transform: scale(2);
     filter: blur(10px);
     animation: fadeInScale 1s ease-in-out forwards;
@@ -74,7 +86,8 @@ body {
 }
 
 .txtFade5{
-    opacity: 0;
+    will-change: transform, opacity, filter;
+    opacity: 0.1;
     transform: scale(2);
     filter: blur(10px);
     animation: fadeInScale 1s ease-in-out forwards;
@@ -82,7 +95,8 @@ body {
 }
 
 .txtFade6{
-    opacity: 0;
+    will-change: transform, opacity, filter;
+    opacity: 0.1;
     transform: scale(2);
     filter: blur(10px);
     animation: fadeInScale 1s ease-in-out forwards;
@@ -90,7 +104,8 @@ body {
 }
 
 .txtFade7{
-    opacity: 0;
+    will-change: transform, opacity, filter;
+    opacity: 0.1;
     transform: scale(2);
     filter: blur(10px);
     animation: fadeInScale 1s ease-in-out forwards;
@@ -98,7 +113,8 @@ body {
 }
 
 .txtFade8{
-    opacity: 0;
+    will-change: transform, opacity, filter;
+    opacity: 0.1;
     transform: scale(2);
     filter: blur(10px);
     animation: fadeInScale 1s ease-in-out forwards;
@@ -106,7 +122,8 @@ body {
 }
 
 .txtFade9{
-    opacity: 0;
+    will-change: transform, opacity, filter;
+    opacity: 0.1;
     transform: scale(2);
     filter: blur(10px);
     animation: fadeInScale 1s ease-in-out forwards;
@@ -116,7 +133,7 @@ body {
 @keyframes fadeInScale {
     from {
         filter: blur(10px);
-        opacity: 0;
+        opacity: 0.1;
         transform: scale(2);
     }
     to {
@@ -131,15 +148,18 @@ body {
     right: 3vw;
     top: 4vh;
     z-index: 1;
+}
+
+#mc_embed_signup_scroll{
+    display: flex;
+    gap: 10px;
+}
+
+.botonSuscribirse input{
     font-size: 1.4vh;
 }
 
-.botonSuscribirse form {
-    display: flex;
-    gap: 20px;
-}
-
-.botonSuscribirse input {
+.formularioSus {
     width: 20vw;
     background-color: rgba(255, 255, 255, 0.35);
     padding: 8px 12px;
@@ -148,7 +168,7 @@ body {
     color: #222;
 }
 
-.botonSuscribirse button {
+.botonActivar {
     padding: 8px 12px;
     background-color: #fff;
     color: #000;
@@ -156,11 +176,6 @@ body {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.5s ease;
-}
-
-.botonSuscribirse button:hover {
-    background-color: rgba(255, 255, 255, 0.6);
 }
 
 .txtFloatLima {
@@ -264,6 +279,7 @@ body {
     margin: 0 1vw;
     max-width: 14vh;
     max-height: 8.5vh;
+    vertical-align: middle;
 }
 
 
@@ -324,7 +340,7 @@ body {
 }
 
 @media (max-aspect-ratio: 6 / 5) {
-    .botonSuscribirse input {
+    .formularioSus {
         width: 30vw;
     }
 }
@@ -356,11 +372,12 @@ body {
 }
 
 @media (max-aspect-ratio: 7 / 8){
-    .botonSuscribirse form {
-        gap: 10px;
+    #mc_embed_signup_scroll {
+        gap: ´8px;
     }
 
-    .botonSuscribirse input {
+    .formularioSus {
+        padding: 6px 8px;
         width: 45vw;
     }
 
@@ -368,12 +385,8 @@ body {
         left: 5vw;
         top: 10.5vh;
     }
-
-    .botonSuscribirse input {
-        padding: 6px 8px;
-    }
     
-    .botonSuscribirse button {
+    .botonActivar {
         padding: 6px 8px;
     }
 
@@ -440,6 +453,10 @@ body {
 }
 
 @media (max-aspect-ratio: 1 / 2){
+    #mc_embed_signup_scroll {
+        gap: 6px;
+    }
+
     .txtFloatLima {
         left: 10vw;
     }
